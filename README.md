@@ -6,4 +6,4 @@ how many hours you need to add or subtract to convert it to youe timezone(ex. 10
 
 Here are some pictures:
   ![alt text](https://raw.githubusercontent.com/MineBill/tz-helper/master/TimeZoneConverter/images/before.png "Before")
-  ![alt text](https://github.com/MineBill/tz-helper/TimeZoneConverter/images/acfter.png "After")
+  ![alt text](https://raw.githubusercontent.com/MineBill/tz-helper/master/TimeZoneConverter/images/after.png "After")

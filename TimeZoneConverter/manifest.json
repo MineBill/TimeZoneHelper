@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "TimeZoneHelper",
+  "description": "A simple chrome extension to help with the struggle of timezones.",
+  "version": "0.1",
+  "content_scripts":[
+    {
+      "matches":[
+        "<all_urls>"
+      ],
+      "js":["content.js"]
+    }
+  ],
+  "permissions": [
+    "tabs", "<all_urls>","storage"
+  ],
+  "background":{
+    "scripts": ["background.js"]
+  },
+  "browser_action":{
+    "default_icon":"logo.png",
+    "default_popup":"popup/popup.html"
+  }
+}

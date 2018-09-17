@@ -1,0 +1,1 @@
+- Will not try to look for the same timezone once it is found once.

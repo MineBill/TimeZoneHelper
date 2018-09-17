@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Time Zone Helper</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    
+    <style>
+        h1{
+            font-family: 'Source Sans Pro',sans-serif;
+            font-size: 10px;
+            text-align: center;
+        }
+
+        .switch{
+            position: relative;
+            align-content: center;
+            display: inline-block;
+            width: 90px;
+            height: 34px;
+        }
+        .switch input {display: none;}
+
+        .slider{
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color:red;
+            -webkit-transition: .0s;
+            transition: .0;
+        }
+
+        .slider::before{
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .0s;
+            transition: .0s;
+        }
+
+        input:checked + .slider{
+            background-color:deepskyblue;
+        }
+
+        input:focus + .slider{
+            box-shadow: 0 0 1px rgb(0, 0, 0);
+        }
+
+        input:checked + .slider::before{
+            -webkit-transform: translateX(56px);
+            -ms-transform: translateX(56px);
+            transform: translateX(56px);
+        }
+
+        .slider.round{
+            border-radius: 34px;
+        }
+        .slider.round::before{
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <script src="popup.js"></script>
+
+    <h1>Reload for changes to take effect</h1>
+    <label class="switch">
+        <input type="checkbox" id="mainSwitch">
+        <span class="slider round"></span>
+    </label>
+</body>
+</html>
